@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello
+data:
+  message: Hello World, jerry!
+  transformer.mode: MyModel111!
