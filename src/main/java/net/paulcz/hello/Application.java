@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.refresh.ContextRefresher;
 import org.springframework.cloud.context.restart.RestartEndpoint;
+import org.springframework.beans.factory.annotation.Value;
 
 @SpringBootApplication
 @RestController
@@ -15,13 +16,16 @@ public class Application {
 	@Autowired
 	private MyConfig config;
 
+    @Value("${transformer.mode:disguised}")
+    private String mode;
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
     @RequestMapping("/")
     String home() {
-        return config.getMessage();
+        return config.getMessage() + "\n" + mode + "\n" ;
     }
 
 }
