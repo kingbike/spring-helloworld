@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: hello
 data:
-  message: Hello World, jerry!
-  transformer.mode: MyModel111!
+  message: Hello World, cht_2!
+  transformer.mode: MyModel_2!

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.3
+Built-By: root
+Build-Jdk: 11.0.10
+Implementation-Title: hello
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: net.paulcz
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/hello
+Main-Class: org.springframework.boot.loader.JarLauncher
+Start-Class: net.paulcz.hello.Application
+Spring-Boot-Version: 2.1.3.RELEASE
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+
